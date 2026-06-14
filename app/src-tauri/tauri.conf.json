@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Quaver Mapper QoL Pack",
+  "version": "0.1.0",
+  "identifier": "dev.quaver-qol.mapper-pack",
+  "build": {
+    "beforeDevCommand": "npm.cmd run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm.cmd run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Quaver Mapper QoL Pack",
+        "width": 1180,
+        "height": 780,
+        "minWidth": 940,
+        "minHeight": 620
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all"
+  }
+}

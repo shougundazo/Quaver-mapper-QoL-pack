@@ -1,4 +1,4 @@
-# Quaver-mapper-QoL-pack
+# Quaver Mapper QoL Pack
 
 Quaver Mapper QoL Pack is an MVP toolset for speeding up Quaver editor work while keeping the heavy map logic outside the UI.
 
