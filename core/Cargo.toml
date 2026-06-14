@@ -1,0 +1,27 @@
+[package]
+name = "quaver-qol-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Core parser and mapper QoL operations for Quaver .qua files"
+
+[lib]
+name = "quaver_qol_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "quaver-qol"
+path = "src/bin/quaver-qol.rs"
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["clock", "serde"] }
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+similar = "2.6"
+thiserror = "2.0"
+
+[dev-dependencies]
+tempfile = "3.14"
